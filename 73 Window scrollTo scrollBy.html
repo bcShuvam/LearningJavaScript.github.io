@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en" id='main'>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Window scrollTo scrollBy</title>
+  <style media="screen">
+    body{
+      font-family: arial;
+    }
+  </style>
+</head>
+<body>
+  <h1>
+    LunaticShuvam : Window scrollTo & scrollBy
+  </h1>
+  <button onclick="scrolldownWindow()" style="color:#fff;background:slateblue;position:fixed;left:50px;top:50px;">Scroll down Window</button>
+  <button onclick="scrollToWindow()" style="color:#fff;background:slateblue;position:fixed;left:50px;top:50px;">Scroll To Window</button>
+  <p style="background:#000;color:grey;width:1500px;border:5px solid yellowgreen;border-radius:20px;padding:10px">
+    Phasellus congue ante eget nulla bibendum gravida. Mauris a lacus ipsum. In hac habitasse platea dictumst. Donec non lorem et neque congue porttitor. In in nisi ac libero efficitur rhoncus vel in lorem. Vestibulum ornare tempus ex ac venenatis. Donec dictum augue sed dolor ullamcorper elementum. Quisque feugiat lacus nec odio convallis consequat. Ut tempor interdum lectus non fringilla. Vivamus ut eros eleifend, volutpat nunc vel, dictum nisl. Integer id vulputate enim. Aliquam commodo tempor velit sit amet tempus. Etiam sodales vehicula ante, non pellentesque diam varius id. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec eu quam sagittis, suscipit lectus eu, dictum sem. Ut volutpat sapien quam, quis ultrices massa auctor sit amet.
+    Phasellus congue ante eget nulla bibendum gravida. Mauris a lacus ipsum. In hac habitasse platea dictumst. Donec non lorem et neque congue porttitor. In in nisi ac libero efficitur rhoncus vel in lorem. Vestibulum ornare tempus ex ac venenatis. Donec dictum augue sed dolor ullamcorper elementum. Quisque feugiat lacus nec odio convallis consequat. Ut tempor interdum lectus non fringilla. Vivamus ut eros eleifend, volutpat nunc vel, dictum nisl. Integer id vulputate enim. Aliquam commodo tempor velit sit amet tempus. Etiam sodales vehicula ante, non pellentesque diam varius id. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec eu quam sagittis, suscipit lectus eu, dictum sem. Ut volutpat sapien quam, quis ultrices massa auctor sit amet.
+    Phasellus congue ante eget nulla bibendum gravida. Mauris a lacus ipsum. In hac habitasse platea dictumst. Donec non lorem et neque congue porttitor. In in nisi ac libero efficitur rhoncus vel in lorem. Vestibulum ornare tempus ex ac venenatis. Donec dictum augue sed dolor ullamcorper elementum. Quisque feugiat lacus nec odio convallis consequat. Ut tempor interdum lectus non fringilla. Vivamus ut eros eleifend, volutpat nunc vel, dictum nisl. Integer id vulputate enim. Aliquam commodo tempor velit sit amet tempus. Etiam sodales vehicula ante, non pellentesque diam varius id. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec eu quam sagittis, suscipit lectus eu, dictum sem. Ut volutpat sapien quam, quis ultrices massa auctor sit amet.
+    Phasellus congue ante eget nulla bibendum gravida. Mauris a lacus ipsum. In hac habitasse platea dictumst. Donec non lorem et neque congue porttitor. In in nisi ac libero efficitur rhoncus vel in lorem. Vestibulum ornare tempus ex ac venenatis. Donec dictum augue sed dolor ullamcorper elementum. Quisque feugiat lacus nec odio convallis consequat. Ut tempor interdum lectus non fringilla. Vivamus ut eros eleifend, volutpat nunc vel, dictum nisl. Integer id vulputate enim. Aliquam commodo tempor velit sit amet tempus. Etiam sodales vehicula ante, non pellentesque diam varius id. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec eu quam sagittis, suscipit lectus eu, dictum sem. Ut volutpat sapien quam, quis ultrices massa auctor sit amet.
+    Phasellus congue ante eget nulla bibendum gravida. Mauris a lacus ipsum. In hac habitasse platea dictumst. Donec non lorem et neque congue porttitor. In in nisi ac libero efficitur rhoncus vel in lorem. Vestibulum ornare tempus ex ac venenatis. Donec dictum augue sed dolor ullamcorper elementum. Quisque feugiat lacus nec odio convallis consequat. Ut tempor interdum lectus non fringilla. Vivamus ut eros eleifend, volutpat nunc vel, dictum nisl. Integer id vulputate enim. Aliquam commodo tempor velit sit amet tempus. Etiam sodales vehicula ante, non pellentesque diam varius id. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec eu quam sagittis, suscipit lectus eu, dictum sem. Ut volutpat sapien quam, quis ultrices massa auctor sit amet.
+    Phasellus congue ante eget nulla bibendum gravida. Mauris a lacus ipsum. In hac habitasse platea dictumst. Donec non lorem et neque congue porttitor. In in nisi ac libero efficitur rhoncus vel in lorem. Vestibulum ornare tempus ex ac venenatis. Donec dictum augue sed dolor ullamcorper elementum. Quisque feugiat lacus nec odio convallis consequat. Ut tempor interdum lectus non fringilla. Vivamus ut eros eleifend, volutpat nunc vel, dictum nisl. Integer id vulputate enim. Aliquam commodo tempor velit sit amet tempus. Etiam sodales vehicula ante, non pellentesque diam varius id. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec eu quam sagittis, suscipit lectus eu, dictum sem. Ut volutpat sapien quam, quis ultrices massa auctor sit amet.
+    Phasellus congue ante eget nulla bibendum gravida. Mauris a lacus ipsum. In hac habitasse platea dictumst. Donec non lorem et neque congue porttitor. In in nisi ac libero efficitur rhoncus vel in lorem. Vestibulum ornare tempus ex ac venenatis. Donec dictum augue sed dolor ullamcorper elementum. Quisque feugiat lacus nec odio convallis consequat. Ut tempor interdum lectus non fringilla. Vivamus ut eros eleifend, volutpat nunc vel, dictum nisl. Integer id vulputate enim. Aliquam commodo tempor velit sit amet tempus. Etiam sodales vehicula ante, non pellentesque diam varius id. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec eu quam sagittis, suscipit lectus eu, dictum sem. Ut volutpat sapien quam, quis ultrices massa auctor sit amet.
+    Phasellus congue ante eget nulla bibendum gravida. Mauris a lacus ipsum. In hac habitasse platea dictumst. Donec non lorem et neque congue porttitor. In in nisi ac libero efficitur rhoncus vel in lorem. Vestibulum ornare tempus ex ac venenatis. Donec dictum augue sed dolor ullamcorper elementum. Quisque feugiat lacus nec odio convallis consequat. Ut tempor interdum lectus non fringilla. Vivamus ut eros eleifend, volutpat nunc vel, dictum nisl. Integer id vulputate enim. Aliquam commodo tempor velit sit amet tempus. Etiam sodales vehicula ante, non pellentesque diam varius id. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec eu quam sagittis, suscipit lectus eu, dictum sem. Ut volutpat sapien quam, quis ultrices massa auctor sit amet.
+    Phasellus congue ante eget nulla bibendum gravida. Mauris a lacus ipsum. In hac habitasse platea dictumst. Donec non lorem et neque congue porttitor. In in nisi ac libero efficitur rhoncus vel in lorem. Vestibulum ornare tempus ex ac venenatis. Donec dictum augue sed dolor ullamcorper elementum. Quisque feugiat lacus nec odio convallis consequat. Ut tempor interdum lectus non fringilla. Vivamus ut eros eleifend, volutpat nunc vel, dictum nisl. Integer id vulputate enim. Aliquam commodo tempor velit sit amet tempus. Etiam sodales vehicula ante, non pellentesque diam varius id. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec eu quam sagittis, suscipit lectus eu, dictum sem. Ut volutpat sapien quam, quis ultrices massa auctor sit amet.
+  </p>
+  <button onclick="scrollupWindow()" style="color:#fff;background:red;position:fixed;left:50px;bottom:50px;">Scroll up Window</button>
+  <button onclick="scrollToWindow()" style="color:#fff;background:slateblue;position:fixed;left:50px;top:50px;">Scroll To Window</button>
+
+
+  <script>
+    function scrolldownWindow(){
+      window.scrollBy(100,100);
+    }
+    function scrollupWindow(){
+      window.scrollBy(-100,-100);
+    }
+    function scrollToWindow(){
+      window.scrollTo(0,0);
+    }
+  </script>
+</body>
+</html>

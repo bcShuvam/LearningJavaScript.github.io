@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en" id='main'>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>BOM Window moveBy moveTo</title>
+  <style media="screen">
+    body{
+      font-family: arial;
+    }
+  </style>
+</head>
+<body onresize="resize()">
+  <button onclick="openWindow()">Open Window </button>
+  <button onclick="resizeWindow()">Resize Window </button>
+  <script>
+    let myWindow;
+    function openWindow() {
+      myWindow = window.open('','','width=500px,height=400px');
+      myWindow.document.write('<p>This is a window moveTo test.</p>')
+    }
+    function resizeWindow() {
+      // myWindow.resizeTo(500,500);
+      myWindow.resizeBy(500,500);
+      myWindow.focus();
+    }
+  </script>
+</body>
+</html>

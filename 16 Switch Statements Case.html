@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title> Switch Case Statement </title>
+  <script>
+    var day = 2;
+
+    switch (day) {
+      case 0:
+            document.write('Today is Sunday.');
+        break;
+
+      case 1:
+            document.write('Today is Monday.');
+        break;
+
+      case 2:
+            document.write('Today is Tuesday.');
+            document.write('Don\'t cut your hair today.');
+        break;
+
+      case 3:
+            document.write('Today is Wednesday.');
+        break;
+
+      case 4:
+            document.write('Today is Thrusday');
+        break;
+
+      case 5:
+            document.write('Today is Friday.');
+            document.write('Watch Friday the 13th.');
+        break;
+
+      case 6:
+            document.write('Today is Saturday.');
+        break;
+
+      default:
+            document.write('Enter the valid day.');
+}
+    /////////////////////////////////////////////////////
+    var day1 = 6;
+    switch (day1) {
+      case 0: case 1: case 2: case 3: case 4: case 5:
+            document.write('Today is not holiday get ready for school.');
+        break;
+
+      case 6:
+            document.write('Today is half-holiday.');
+        break;
+
+      case 7:
+            document.write('Go to sleep today is holiday.');
+        break;
+
+      default:
+            document.write('Not a day.');
+    }
+
+    /////////////////////////////////////////////////////////
+    var age = 19;
+    switch (true) {
+      case (age >= 17 && age <= 22):
+            document.write('You are eligible.');
+        break;
+
+      case age > 22 && age <= 26:
+            document.write('Speak to our commander.');
+        break;
+
+      default:
+            document.write('Your are not eligible.');
+    }
+  </script>
+</head>
+<body>
+  <h1 id="main">
+    Lunatic Shuvam : Javascript Switch Case Statement
+  </h1>
+</body>
+</html>

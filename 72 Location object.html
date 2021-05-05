@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en" id='main'>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Location Object</title>
+  <style media="screen">
+    body{
+      font-family: arial;
+    }
+  </style>
+</head>
+<body onresize="resize()">
+  <button onclick="locat()">Click Me</button>
+  <script>
+    function locat(){
+      // location.href = 'https://www.google.com';
+      // location.reload();
+      // location.assign('https://www.youtube.com');
+      location.replace('https://www.google.com');
+    }
+  </script>
+</body>
+</html>

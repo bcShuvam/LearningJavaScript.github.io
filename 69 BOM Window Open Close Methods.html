@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en" id='main'>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>BOM Window Open Close</title>
+  <style media="screen">
+    body{
+      font-family: arial;
+    }
+  </style>
+</head>
+<body onresize="resize()">
+  <button onclick="openWindow()">Open Window </button>
+  <button onclick="closeWindow()">Close Window </button>
+  <script>
+    let myWindow;
+    function openWindow() {
+      myWindow = window.open('http://www.yahoobaba.net','_blank','width=500px,height=400px,left=500px,top=150px');
+    }
+    function closeWindow() {
+      myWindow.close();
+    }
+  </script>
+</body>
+</html>

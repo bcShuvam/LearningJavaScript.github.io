@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title> Objects </title>
+  <script>
+    var a = {
+      fname : 'Shuvam',
+      lname : 'B.C',
+      age : 17,
+      email : 'dean42328@gmail.com',
+      favmovies : ['Dhoom','Sholy','Hum'],
+      living : {
+        'city' : 'Biratnagar',
+        'country' : 'Nepal'
+      },
+      salary : function(){
+        return 45000;
+      },
+      fullname : function(){
+        return this.fname + ' ' + this.lname;
+      }
+    }
+    // document.write(a);
+    console.log(a);
+    console.log(a.fname);
+    // document.write(a.fname);
+    // document.write(a.favmovies);
+    // document.write(a.favmovies[1]);
+    // document.write(a.salary());
+    // document.write(a.fullname());
+    document.write(a.living.city);
+  </script>
+</head>
+<body>
+  <h1 id="main">
+    Lunatic Shuvam : Javascript Object
+  </h1>
+</body>
+</html>

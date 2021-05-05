@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title> Create Array Method</title>
+  <script>
+    var ary = [
+                ['Shuvam',17,'Male','Com.Science'],
+                ['Keshab',17,'Male','Commerce'],
+                ['Sidhartha',17,'Male','Bio.Science'],
+                ['Dholu',17,'Male','Com.Commerce']
+              ];
+    // document.write(ary[0][3]);
+    // document.write('<br>');
+    document.write('<table border="1px" cellspacing="0">');
+    for (var a = 0 ; a < ary.length ; a++){
+      document.write('<tr>')
+      for(var b = 0; b < ary[a].length ; b++){
+        document.write('<td>'+ary[a][b] + '</td>');
+      }
+      // document.write('<br>');
+      document.write('</tr>');
+    }
+    document.write('</table>');
+  </script>
+</head>
+<body>
+  <h1 id="main">
+    Lunatic Shuvam : Javascript Create Array Method
+  </h1>
+</body>
+</html>

@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title> For / in Loop </title>
+  <script>
+    const info = {
+      fname : 'Shuvam',
+      lname : 'B.C',
+      age : 17,
+      email : 'dean42328@gmail.com',
+    };
+    // info.name = 'Shuvam B.C';
+    console.log(info);
+    console.log(info.fname);
+
+    for (var key in info){
+      document.write(key + ' : '+info[key] + '<br>');
+    }
+  </script>
+</head>
+<body>
+  <h1 id="main">
+    Lunatic Shuvam : Javascript For / in Loop
+  </h1>
+</body>
+</html>

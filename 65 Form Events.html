@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en" id='main'>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Form Events</title>
+  <style media="screen">
+    body{
+      font-family: arial;
+    }
+  </style>
+</head>
+<body>
+  <form action="" onsubmit="submitFunction()">
+    <label for="">Name : </label><input type='email' id="fname" onfocus="focusFunction(this)" onblur="blurFunction(this)" oninput="inputFunction(this)">
+    <br><br>
+    <label for="">Class : </label><input type='text' id="" onfocus="focusFunction(this)" onblur="blurFunction(this)">
+    <br><br>
+    <label>Country : </label>
+    <select id="" onfocus="focusFunction(this)" onblur="blurFunction(this)">
+      <option value="">Bangladesh</option>
+      <option value="">Bhutan</option>
+      <option value="">India</option>
+      <option value="">Maldives</option>
+      <option value="">Nepal</option>
+      <option value="">Sir Lanka</option>
+    </select>
+    <br>
+    <input type="submit">
+  </form>
+  <div id="test" style="border:1px solid red;color:lightgreen;background:#000;">
+
+  </div>
+  <script>
+    function focusFunction(element){
+      element.style.background = 'orange';
+      document.getElementById('test').style.height = '30px';
+    }
+    function blurFunction(element){
+      element.style.background = '';
+      document.getElementById('test').style.background = '';
+      document.getElementById('test').style.height = '';
+      document.getElementById('test').style.color = '';
+    }
+    function inputFunction(element){
+      let rewrite = element.value;
+      document.getElementById('test').innerHTML = rewrite;
+      document.getElementById('test').style.padding = '10px';
+      document.getElementById('test').style.height = '30px';
+    }
+    function submitFunction(element){
+      let name = document.getElementById('fname').value;
+      alert('Thank you'+' '+name);
+      }
+  </script>
+</body>
+</html>

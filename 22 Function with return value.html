@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title> Function with parameter </title>
+  <script>
+    function fullname(fname='Sallu',lname='Bhai'){
+      var name = fname + ' ' + lname;
+      return name;
+    }
+    var fn = fullname('Ram','Dev Gun');
+    document.write(fn);
+    document.write('<br>');
+
+    function sum(math = 0, eng = 0, sc = 0){
+      var total = math + eng + sc;
+      return total;
+    }
+    var som = sum(55,65,75);
+    document.write(som);
+    document.write('<br>');
+
+    function percentage(tt=0){
+      var percent = tt/300*100;
+      return percent;
+    }
+    var per = percentage(som);
+    document.write(per);
+
+  </script>
+</head>
+<body>
+  <h1 id="main">
+    Lunatic Shuvam : Javascript Function with parameter
+  </h1>
+</body>
+</html>

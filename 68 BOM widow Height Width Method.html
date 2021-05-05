@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en" id='main'>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>BOM Borwser Object Model</title>
+  <style media="screen">
+    body{
+      font-family: arial;
+    }
+  </style>
+</head>
+<body onresize="resize()">
+  <script>
+    alert('Open Console And resize me');
+    function resize() {
+      console.clear();
+      let inHeight = window.innerHeight;
+      console.log('innerHeight = '+inHeight);
+
+      let outHeight = window.outerHeight;
+      console.log('outerHeight = '+outHeight);
+
+      let inWidth = window.innerWidth;
+      console.log('innerWidth = '+inWidth);
+
+      let outWidth = window.outerHeight;
+      console.log('OuterWidth = '+outWidth);
+    }
+  </script>
+</body>
+</html>

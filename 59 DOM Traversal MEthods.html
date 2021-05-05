@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en" id='main'>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>DOM Traversal Methods</title>
+  <style media="screen">
+    body{
+      font-family: arial;
+    }
+    #outer{
+      padding:10px;
+      background: yellow;
+    }
+    #inner{
+      margin:10px;
+      margin-bottom: 10px;
+      padding:10px;
+      background:hotpink;
+    }
+    #inner div{
+      text-align: center;
+      padding:5px;
+      width:65px;
+      background: grey;
+      display: inline-block;
+      margin:10px 20px;
+    }
+  </style>
+</head>
+<body>
+  <div id='outer'>
+    <h2>Outer</h2>
+    <div id='inner'>
+      <h2 id='child-head'>Inner</h2>
+      <div>A</div>
+      <div>B</div>
+      <div id=child-C>C</div>
+      <div>D</div>
+      <div id='child-E'>E</div>
+    </div>
+  </div>
+  <!-- <script src="js/parentElement parentNode Methods.js">  </script> -->
+  <!-- <script src="js/childern childernNodes Methods.js">  </script> -->
+  <!-- <script src="js/firstChild lastChild firstElementChild lastElementChild Methods.js">  </script> -->
+  <script src="js/nextSibling previousSibling Methods.js">  </script>
+  <!-- <script src="js/createElement createTextNode Methods.js">  </script> -->
+</body>
+</html>
